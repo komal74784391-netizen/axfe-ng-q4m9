@@ -1,0 +1,6 @@
+(kicad_sch (version 20231120) (generator eeschema)
+  (uuid 2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d60)
+  (paper "A4")
+  (title_block (title "AXFE-NG") (rev "OB-2025-042"))
+  (sheet_instances (path "/" (page "1")))
+)
