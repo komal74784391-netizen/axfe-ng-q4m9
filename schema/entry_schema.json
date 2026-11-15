@@ -105,7 +105,7 @@
         },
         "direct_high_speed_service": {
           "type": "boolean",
-          "description": "True when a direct G-series high-speed service connects the two stations on the service date printed in the case study."
+          "description": "True when the case study's operator service-day summary lists a direct G-series high-speed service for the pair on the audit date."
         }
       }
     }
