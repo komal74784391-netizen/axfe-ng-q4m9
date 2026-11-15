@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.2",
+  "title": "Corridor Reproducibility Register review packet",
+  "description": "One packet per case study. All evidence quotes must be copied verbatim from the mirrored primary document.",
+  "fields": {
+    "case_id": {
+      "type": "string",
+      "description": "Archive stamp of the case study exactly as printed in the source document."
+    },
+    "benchmark": {
+      "type": "object",
+      "fields": {
+        "title": {
+          "type": "string",
+          "description": "Exact title printed in the case study."
+        },
+        "doi": {
+          "type": "string",
+          "description": "DOI exactly as printed in the case study."
+        },
+        "reference_mae": {
+          "type": "number",
+          "description": "Published reference MAE (lower is better)."
+        }
+      }
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "slug": {
+          "type": "string",
+          "description": "Candidate slug from candidates/index.json."
+        },
+        "verdict": {
+          "type": "string",
+          "enum": [
+            "in_scope",
+            "excluded"
+          ]
+        },
+        "reason_code": {
+          "type": "string",
+          "enum": [
+            "compliant",
+            "author_published",
+            "different_work",
+            "name_variant",
+            "not_an_implementation"
+          ]
+        },
+        "evidence_path": {
+          "type": "string",
+          "description": "Path of the mirrored primary document inside this registry, e.g. candidates/<slug>/README.md."
+        },
+        "evidence_quote": {
+          "type": "string",
+          "description": "Verbatim sentence copied from that document which justifies the verdict (at least 20 characters)."
+        },
+        "reported_mae": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "MAE reported by the candidate's own document, or null when none is reported."
+        }
+      }
+    },
+    "selected_submission": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Slug of the compliant submission closest to the reference MAE, or null if there is none."
+    },
+    "corridors": {
+      "type": "array",
+      "items": {
+        "corridor_id": {
+          "type": "string",
+          "description": "Corridor identifier printed in the case study."
+        },
+        "origin_cn": {
+          "type": "string",
+          "description": "Origin station name in Chinese as printed."
+        },
+        "origin_code": {
+          "type": "string",
+          "description": "Three-letter station code."
+        },
+        "origin_en": {
+          "type": "string",
+          "description": "English station name as used in international timetable listings, e.g. 'Jinan West', 'Dezhou East'."
+        },
+        "destination_cn": {
+          "type": "string",
+          "description": "Destination station name in Chinese as printed."
+        },
+        "destination_code": {
+          "type": "string",
+          "description": "Three-letter station code."
+        },
+        "destination_en": {
+          "type": "string",
+          "description": "English station name as used in international timetable listings, e.g. 'Jinan West', 'Dezhou East'."
+        },
+        "direct_high_speed_service": {
+          "type": "boolean",
+          "description": "True when a direct G-series high-speed service connects the two stations on the service date printed in the case study."
+        }
+      }
+    }
+  },
+  "example_corridor": {
+    "corridor_id": "C1",
+    "origin_cn": "济南西",
+    "origin_code": "JGK",
+    "origin_en": "Jinan West",
+    "destination_cn": "德州东",
+    "destination_code": "DIP",
+    "destination_en": "Dezhou East",
+    "direct_high_speed_service": true
+  }
+}

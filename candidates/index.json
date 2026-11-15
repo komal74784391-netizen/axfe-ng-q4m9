@@ -1,0 +1,57 @@
+{
+  "query": "cross-corridor demand forecasting benchmark reproduction",
+  "captured_at": "2026-10-30T09:12:00Z",
+  "captured_by": "komal74784391-netizen",
+  "note": "Popularity metrics are search-snapshot values and are not evidence of eligibility. Mirrored primary documents are under candidates/<slug>/README.md.",
+  "results": [
+    {
+      "rank": 1,
+      "slug": "ccdf-bench-data-dump",
+      "upstream_repo": "corridor-commons/ccdf-bench-data-dump",
+      "stars": 2310,
+      "snippet": "Complete data files and score tables for the Cross-Corridor Demand Forecasting Benchmark (2.3k stars)."
+    },
+    {
+      "rank": 2,
+      "slug": "ccdf-bench-toolkit",
+      "upstream_repo": "curved-lab/ccdf-bench-toolkit",
+      "stars": 1905,
+      "snippet": "Official CCDF benchmark toolkit: flagship implementation for curved-channel delay forecasting (1.9k stars)."
+    },
+    {
+      "rank": 3,
+      "slug": "ccdf24-authors-code",
+      "upstream_repo": "halvorsen-lab/ccdf24-authors-code",
+      "stars": 1744,
+      "snippet": "Official reference implementation for the Cross-Corridor Demand Forecasting Benchmark (JCOR-2024-0473); best published score."
+    },
+    {
+      "rank": 4,
+      "slug": "corridor-demand-forecasting-attention",
+      "upstream_repo": "attention-models/corridor-demand-forecasting-attention",
+      "stars": 631,
+      "snippet": "Corridor demand forecasting benchmark reproduction with attention layers (631 stars)."
+    },
+    {
+      "rank": 5,
+      "slug": "mule-corridor-repro",
+      "upstream_repo": "mule-labs/mule-corridor-repro",
+      "stars": 118,
+      "snippet": "Independent reproduction of the corridor demand benchmark; reports MAE 12.89 (118 stars)."
+    },
+    {
+      "rank": 6,
+      "slug": "openrail-repro-kit",
+      "upstream_repo": "openrail-community/openrail-repro-kit",
+      "stars": 44,
+      "snippet": "Community reimplementation of the corridor demand forecasting benchmark; MAE 13.07 (44 stars)."
+    },
+    {
+      "rank": 7,
+      "slug": "streamgate-forecast-harness",
+      "upstream_repo": "streamgate/streamgate-forecast-harness",
+      "stars": 27,
+      "snippet": "Minimal harness reproducing the published corridor benchmark; MAE 13.17 (27 stars)."
+    }
+  ]
+}
